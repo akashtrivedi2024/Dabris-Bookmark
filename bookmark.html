@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DABRIS - Your Ultimate Browser</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>DABRIS</h1>
+        <p id="greeting">Welcome to the Future of Browsing!</p>
+        <button id="themeSwitcher">🌗</button>
+    </header>
+
+    <!-- Controls -->
+    <div class="controls">
+        <input type="text" id="searchBox" placeholder="Search the web...">
+        <button onclick="searchWeb()">🔍 Search</button>
+        <button onclick="voiceSearch()">🎙️ Voice Search</button>
+    </div>
+
+    <!-- Tabs Navigation -->
+    <nav>
+        <button class="tab-button active">Home</button>
+        <button class="tab-button">Social</button>
+        <button class="tab-button">Multimedia</button>
+        <button class="tab-button">Analytics</button>
+        <button class="tab-button">Settings</button>
+    </nav>
+
+    <!-- Tab Sections -->
+    <section class="bookmark-section active">
+        <h2>Home</h2>
+        <div class="grid">
+            <!-- User Customizable Bookmarks -->
+            <a href="https://google.com" target="_blank">Google</a>
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+            <a href="https://amazon.com" target="_blank">Amazon</a>
+            <a href="https://netflix.com" target="_blank">Netflix</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <section class="bookmark-section">
+        <h2>Social Media</h2>
+        <div class="grid">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://reddit.com" target="_blank">Reddit</a>
+        </div>
+    </section>
+
+    <section class="bookmark-section">
+        <h2>Multimedia Hub</h2>
+        <div class="grid">
+            <a href="https://spotify.com" target="_blank">Spotify</a>
+            <a href="https://primevideo.com" target="_blank">Prime Video</a>
+            <a href="https://hulu.com" target="_blank">Hulu</a>
+            <a href="https://soundcloud.com" target="_blank">SoundCloud</a>
+            <a href="https://deezer.com" target="_blank">Deezer</a>
+        </div>
+    </section>
+
+    <section class="bookmark-section">
+        <h2>Analytics</h2>
+        <div id="analyticsData">
+            <!-- Real-time Analytics -->
+            <p>Active Tabs: <span id="activeTabs">0</span></p>
+            <p>Bookmarks Added: <span id="bookmarkCount">0</span></p>
+            <p>Time Spent Browsing: <span id="timeSpent">0 mins</span></p>
+        </div>
+    </section>
+
+    <section class="bookmark-section">
+        <h2>Settings</h2>
+        <div>
+            <h3>Theme Presets</h3>
+            <button onclick="setTheme('dark')">Dark Mode</button>
+            <button onclick="setTheme('light')">Light Mode</button>
+            <button onclick="setTheme('blue')">Blue Neon</button>
+        </div>
+        <div>
+            <h3>Account</h3>
+            <button onclick="login()">Login</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </section>
+
+    <!-- AI Assistant -->
+    <div id="assistant">
+        <h3>Ask DABRIS Assistant</h3>
+        <textarea id="assistantInput" placeholder="Type your query here..."></textarea>
+        <button onclick="askAssistant()">Ask</button>
+        <p id="assistantResponse">Your assistant is here to help!</p>
+    </div>
+</body>
+</html>
